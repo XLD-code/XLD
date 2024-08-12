@@ -1,9 +1,9 @@
 # Code Release of "XLD: A Cross-Lane Dataset for Benchmarking Novel Driving View Synthesis"
-Hao Li, Ming Yuan, Yan Zhang, Chenming Wu, Chen Zhao, Chunyu Song, Haocheng Feng, Errui Ding, Dingwen Zhang, Jingdong Wang
+Anonymous Authors
 ![Teaser image](assets/teaser.jpg)
-## [Project page](https://3d-aigc.github.io/XLD/) | [Paper](https://arxiv.org/abs/2406.18360) | [Data](https://1drv.ms/f/s!Amx_1zEBrKfJg94-bGzJe1PaU8IU6Q?e=uVaFmg)
+## [Project page](https://3d-aigc.github.io/XLD/) 
 
-This repository contains the official authors data preprocess tools for NeRFStudio and Gaussian Splatting methods.
+This repository contains the official data preprocess tools for NeRFStudio and Gaussian Splatting methods.
 
 ### Data Preprocess
 1. Unzip the compressed files (e.g. `carla_pic_0603_Town**.zip`).
@@ -124,17 +124,4 @@ cd ../../
 ```bash
 cd carla_pic_0603_Town01_cam1
 CUDA_VISIBLE_DEVICES=0 python train.py -s carla_pic_0603_Town01_cam1 -m ./carla_pic_0603_Town01_cam1/output --position_lr_init 0.000016 --scaling_lr 0.001 --percent_dense 0.0005 --port 1021 --eval
-```
-
-## Acknowledgement
-The authors would like to thank [Yuanyuan Gao](https://github.com/gyy456) and [Jingfeng Li](https://github.com/Li-jingfeng) for preparing the experiments.
-
-## Citation
-```bibtex
-@article{li2024xld,
-    title={XLD: A Cross-Lane Dataset for Benchmarking Novel Driving View Synthesis},
-    author={Hao Li and Ming Yuan and Yan Zhang and Chenming Wu and Chen Zhao and Chunyu Song and Haocheng Feng and Errui Ding and Dingwen Zhang and Jingdong Wang},
-    journal={arXiv},
-    year={2024}
-}
 ```
